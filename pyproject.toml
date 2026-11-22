@@ -1,0 +1,22 @@
+[project]
+name = "estudos-diversos"
+version = "0.1.0"
+description = "Biblioteca de estudos de algoritmos clássicos"
+readme = "README.md"
+authors = [
+    { name = "area-50", email = "fernando.quimic@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+estudos-diversos = "estudos_diversos:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff==0.17.3",
+]
